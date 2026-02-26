@@ -1,12 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  min-height: 100vh;
   font-family: Arial, sans-serif;
   background-color: #f3f3f3;
+  margin: 0;
+  min-height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -16,32 +12,45 @@ body {
 .app {
   width: 90%;
   max-width: 400px;
-  background-color: white;
-  padding: 24px;
+  background: white;
+  padding: 20px;
   text-align: center;
-}
-
-h1 {
-  margin-bottom: 20px;
 }
 
 input {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
+  margin-bottom: 10px;
   border: 2px solid black;
-  margin-bottom: 12px;
-  font-size: 16px;
 }
 
 button {
-  padding: 10px 16px;
+  padding: 8px 12px;
   background-color: #2ea44f;
   color: white;
   border: none;
   cursor: pointer;
-  font-size: 16px;
 }
 
-button:hover {
-  background-color: #279043;
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button {
+  background-color: #e55353;
+  padding: 4px 8px;
 }
