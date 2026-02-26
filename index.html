@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Task Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Task Manager</h1>
+  <main class="app">
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addBtn">Add Task</button>
 
-  <input type="text" id="taskInput" placeholder="Term">
-  <button id="addBtn">Add Task</button>
-
-  <ul id="taskList"></ul>
+    <ul id="taskList"></ul>
+  </main>
 
   <script src="script.js"></script>
 </body>
